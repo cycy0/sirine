@@ -2,7 +2,7 @@
 
    public static void main(String [] args){
    
-   System.out.println("hello, panda!");
+   System.out.println("hello, CYCY!");
     
    }
 
