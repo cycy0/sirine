@@ -1,9 +1,15 @@
 node {
-    stage('build and run') {
+    stage('Clone') {
         git branch: 'main', url: 'https://github.com/cycy0/sirine.git'
-        sh '''
-            javac HelloPanda.java
-            java HelloPanda
-        '''
+    }
+    stage('Build') {
+    sh '''
+        javac HelloPanda.java
+    '''
+    }
+    stage('Run') {
+    sh '''
+        java HelloPanda
+    '''
     }
 }
